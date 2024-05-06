@@ -1,7 +1,7 @@
-package poo_java;
+package poo_java.model;
 
 //Creo modelo Cliente
-public class Cliente {
+public class Client {
 
     //Agrego atributos
     //Agrego el encapsulamiento private
@@ -22,14 +22,14 @@ public class Cliente {
     */
 
     //Genero un constructor vacio
-    public Cliente() {
+    public Client() {
         
     }
 
     /**this : Palabra reservada en Java para hacer referencia a una variable en
     concreto (funciona como un puntero)
     */
-    public Cliente(int code, int phone_numb, String document, String name, String email) {
+    public Client(int code, int phone_numb, String document, String name, String email) {
         this.code = code; //this.code hace referencia a la variable q creamos en la linea 13
         phoneNumb = phone_numb;  //Tambien se puede colocar facilmente otro nombre y no necesitariamos "this"
         this.document = document;

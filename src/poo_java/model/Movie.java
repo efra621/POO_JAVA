@@ -1,5 +1,6 @@
-package poo_java;
+package poo_java.model;
 
+import poo_java.model.Product;
 import java.util.ArrayList;
 
 /**

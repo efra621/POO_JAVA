@@ -1,4 +1,4 @@
-package poo_java;
+package poo_java.model;
 
 /**
  *
