@@ -1,7 +1,7 @@
-package poo_java.model;
+package model;
 
 //Creo modelo Cliente
-public class Client {
+public class Cliente {
 
     //Agrego atributos
     //Agrego el encapsulamiento private
@@ -22,14 +22,14 @@ public class Client {
     */
 
     //Genero un constructor vacio
-    public Client() {
+    public Cliente() {
         
     }
 
     /**this : Palabra reservada en Java para hacer referencia a una variable en
     concreto (funciona como un puntero)
     */
-    public Client(int code, int phone_numb, String document, String name, String email) {
+    public Cliente(int code, int phone_numb, String document, String name, String email) {
         this.code = code; //this.code hace referencia a la variable q creamos en la linea 13
         phoneNumb = phone_numb;  //Tambien se puede colocar facilmente otro nombre y no necesitariamos "this"
         this.document = document;
@@ -49,6 +49,7 @@ public class Client {
     /** set: Para q sirve?
     El metodo set = modificar valores 
      */
+    
     public void setCode(int code) {
         this.code = code;
     }
@@ -84,7 +85,14 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
+
     
-    
-    
+    @Override
+    public String toString() {
+        return "Cliente{" + "code=" + code + ", phoneNumb=" + phoneNumb + ", document=" + document + ", name=" + name + ", email=" + email + '}';
+    }
+
+    public void add(Cliente cliente) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
